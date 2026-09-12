@@ -3,11 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaMotion — Original Anime Story Scripts for License</title>
-<meta name="description" content="NovaMotion writes original, high-stakes anime short-drama scripts — full series bibles, episode guides, and sample scripts ready for you to license and produce.">
+<title>Coffin of the Seven Sins — Original Anime Short-Drama Script for License | NovaMotion</title>
+<meta name="description" content="Buried alive with a System that exposes everyone's sins, Princess Su Lingxi claws out of her own coffin to work through a death-list of seven killers. License the full anime short-drama script and series bible from NovaMotion.">
+<link rel="canonical" href="https://coffinofthesevensins.com/">
+<!-- OpenGraph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Coffin of the Seven Sins — Original Anime Short-Drama Script for License">
+<meta property="og:description" content="A wronged princess reborn from death, carrying a System that turns revenge into a quantified, game-like quest. Full script + series bible available for licensing.">
+<meta property="og:image" content="https://coffinofthesevensins.com/assets/cover-sins2.png">
+<meta property="og:url" content="https://coffinofthesevensins.com/">
+<meta property="og:site_name" content="NovaMotion Studio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coffin of the Seven Sins — Original Anime Script for License">
+<meta name="twitter:description" content="Rebirth × revenge × LitRPG System × palace intrigue. License the full script and series bible.">
+<meta name="twitter:image" content="https://coffinofthesevensins.com/assets/cover-sins2.png">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"NovaMotion Studio",
+  "url":"https://coffinofthesevensins.com",
+  "description":"Original, high-stakes anime short-drama scripts for licensing.",
+  "potentialAction":{"@type":"SearchAction","target":"https://coffinofthesevensins.com/?q={search_term_string}","query-input":"required name=search_term_string"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CreativeWork",
+  "name":"Coffin of the Seven Sins",
+  "genre":"Dark Fantasy / Rebirth / Revenge / LitRPG / Palace Intrigue",
+  "creator":{"@type":"Organization","name":"NovaMotion Studio","url":"https://coffinofthesevensins.com"},
+  "description":"A murdered princess reborn in her own coffin with a System that exposes the sins of her killers. Seven sins, seven killers, one vengeance at a time.",
+  "video":[{"@type":"VideoObject","name":"They Buried Her Alive. She Woke Up With a System.","description":"Episode 1 teaser","contentUrl":"https://www.youtube.com/watch?v=45T7qs9oyBQ","thumbnailUrl":"https://coffinofthesevensins.com/assets/cover-sins.png","uploadDate":"2026-09-11"},
+           {"@type":"VideoObject","name":"They Called Her a Ghost. She Saw Right Through Them.","description":"Episode 2 teaser","contentUrl":"https://www.youtube.com/watch?v=784CuhQE_fI","thumbnailUrl":"https://coffinofthesevensins.com/assets/cover-sins2.png","uploadDate":"2026-09-11"}]
+}
+</script>
 <style>
   :root{
-    --bg:#0b0b16;--bg2:#12122a;--card:#171730;--line:rgba(255,255,255,.08);
+    --bg:#07070f;--bg2:#0e0e1f;--card:#12122a;--line:rgba(255,255,255,.08);
     --text:#eceaf6;--muted:#9a97b8;--accent:#8b5cf6;--accent2:#f472b6;--cyan:#22d3ee;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -15,14 +49,11 @@
   body{
     font-family:'Segoe UI',system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
     background:var(--bg);color:var(--text);line-height:1.6;
-    background-image:
-      radial-gradient(900px 500px at 15% -10%,rgba(139,92,246,.25),transparent 60%),
-      radial-gradient(800px 500px at 90% 0%,rgba(244,114,182,.18),transparent 55%),
-      radial-gradient(700px 500px at 50% 110%,rgba(34,211,238,.12),transparent 60%);
   }
   a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
   .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-  header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(11,11,22,.72);border-bottom:1px solid var(--line)}
+  header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(7,7,15,.78);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
   .logo{font-size:1.25rem;font-weight:800;letter-spacing:.5px}
   .logo b{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -32,41 +63,60 @@
   .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-weight:600;font-size:.92rem;padding:10px 20px;border-radius:999px;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s}
   .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(139,92,246,.35)}
   .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
-  .btn.ghost:hover{box-shadow:none;border-color:var(--accent)}
-  .hero{padding:90px 0 70px;text-align:center}
-  .badge{display:inline-block;font-size:.8rem;font-weight:600;color:var(--cyan);border:1px solid rgba(34,211,238,.3);background:rgba(34,211,238,.08);padding:6px 16px;border-radius:999px;margin-bottom:22px}
+  .btn.ghost:hover{border-color:var(--accent)}
+
+  /* ---- Hero with palace scene backdrop ---- */
+  .hero{position:relative;padding:100px 0 80px;text-align:center;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:url("assets/scene-palace.png") center/cover no-repeat;opacity:.28;filter:grayscale(.3) brightness(.6)}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 50% 0%,rgba(139,92,246,.18),transparent 60%)}
+  .hero .wrap{position:relative;z-index:2}
+  .badge{display:inline-block;font-size:.8rem;font-weight:600;color:var(--cyan);border:1px solid rgba(34,211,238,.3);background:rgba(7,7,15,.6);padding:6px 16px;border-radius:999px;margin-bottom:22px}
   .hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:800;line-height:1.15;letter-spacing:-.5px}
   .hero h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .hero p{max-width:680px;margin:22px auto 0;color:var(--muted);font-size:1.08rem}
+  .hero p{max-width:680px;margin:22px auto 0;color:#cfcbe6;font-size:1.08rem}
   .hero-actions{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
-  section{padding:60px 0}
-  .sec-head{margin-bottom:34px}
+
+  section{padding:56px 0}
+  .sec-head{margin-bottom:30px;text-align:center}
   .sec-head h2{font-size:1.7rem;font-weight:800;letter-spacing:-.3px}
-  .sec-head p{color:var(--muted);margin-top:8px}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .sec-head p{color:var(--muted);margin-top:8px;max-width:640px;margin-left:auto;margin-right:auto}
+
+  /* ---- Video block: real embedded trailers ---- */
+  .videos{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  @media(max-width:820px){.videos{grid-template-columns:1fr}}
+  .vframe{aspect-ratio:9/16;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000}
+  .vframe iframe{width:100%;height:100%;border:0}
+
+  /* ---- Character cards ---- */
+  .chars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:880px){.chars{grid-template-columns:1fr}}
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,border-color .2s}
   .card:hover{transform:translateY(-4px);border-color:rgba(139,92,246,.4)}
-  .cover{height:260px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-  .cover img{width:100%;height:100%;object-fit:cover;object-position:center top}
-  .cover .ph{font-size:2.4rem;font-weight:800;color:rgba(255,255,255,.5)}
-  .c1{background:linear-gradient(135deg,#7c3aed,#db2777)}
-  .c2{background:linear-gradient(135deg,#0891b2,#4f46e5)}
-  .c3{background:linear-gradient(135deg,#be185d,#7c3aed)}
-  .tag{position:absolute;top:12px;left:12px;font-size:.72rem;font-weight:700;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);padding:4px 10px;border-radius:999px}
+  .card .cover{height:340px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--bg2)}
+  .card .cover img{width:100%;height:100%;object-fit:cover;object-position:center top}
+  .card .sin{position:absolute;top:12px;left:12px;font-size:.72rem;font-weight:700;letter-spacing:.5px;background:rgba(0,0,0,.6);padding:4px 10px;border-radius:999px;color:#fff}
   .card-body{padding:18px 20px 22px}
-  .card-body h3{font-size:1.1rem;font-weight:700}
-  .card-body p{color:var(--muted);font-size:.88rem;margin-top:8px}
-  .meta{display:flex;gap:14px;margin-top:14px;font-size:.8rem;color:var(--muted);flex-wrap:wrap}
-  .meta b{color:var(--text);font-weight:600}
-  .pill{display:inline-block;background:rgba(139,92,246,.15);color:#c4b5fd;border:1px solid rgba(139,92,246,.3);font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:999px;margin-top:12px}
+  .card-body h3{font-size:1.12rem;font-weight:700}
+  .card-body .role{color:var(--accent);font-size:.8rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin:2px 0 10px}
+  .card-body .sinval{display:inline-block;background:rgba(244,114,182,.14);color:#f9a8d4;border:1px solid rgba(244,114,182,.3);font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;margin-top:10px}
+  .card-body p{color:var(--muted);font-size:.9rem;margin-top:8px}
+
+  /* ---- Story hooks ---- */
+  .hooks{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:820px){.hooks{grid-template-columns:1fr}}
+  .hook{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:22px}
+  .hook .ep{font-size:.78rem;font-weight:700;color:var(--cyan);letter-spacing:1px;text-transform:uppercase}
+  .hook h4{font-size:1.05rem;margin:8px 0 8px}
+  .hook p{color:var(--muted);font-size:.9rem}
+
   .offer{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   @media(max-width:820px){.offer{grid-template-columns:1fr}}
   .offer .item{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:26px}
   .offer .item .ic{font-size:1.8rem;margin-bottom:12px}
   .offer .item h3{font-size:1.08rem;margin-bottom:8px}
   .offer .item p{color:var(--muted);font-size:.9rem}
-  .cta{text-align:center;padding:70px 0;background:linear-gradient(180deg,transparent,rgba(139,92,246,.12));border-radius:24px;border:1px solid var(--line)}
+
+  .cta{text-align:center;padding:64px 0;background:linear-gradient(180deg,transparent,rgba(139,92,246,.14));border-radius:24px;border:1px solid var(--line)}
   .cta h2{font-size:1.9rem;font-weight:800}
   .cta p{color:var(--muted);margin:14px auto 28px;max-width:560px}
   footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.85rem}
@@ -79,101 +129,103 @@
   <div class="wrap nav">
     <div class="logo">Nova<b>Motion</b></div>
     <nav class="nav-links">
-      <a href="#scripts">Available Scripts</a>
-      <a href="#about">Why Us</a>
+      <a href="#watch">Watch</a>
+      <a href="#cast">The Cast</a>
+      <a href="#story">Story</a>
       <a href="#license">License</a>
     </nav>
     <a class="btn" href="#license">License a Script</a>
   </div>
 </header>
 
-<section class="hero wrap">
-  <span class="badge">Original Scripts · Ready to License</span>
-  <h1>Binge-Worthy Story Scripts,<br><span class="grad">Ready for Your Anime</span></h1>
-  <p>We write original, high-stakes anime short-drama scripts — full series bibles, episode guides, and sample scripts you can license and produce. Every story is built on the binge logic of webnovels, translated for a global audience.</p>
-  <div class="hero-actions">
-    <a class="btn" href="#scripts">Browse Scripts</a>
-    <a class="btn ghost" href="#license">Get a Quote</a>
-  </div>
-</section>
-
-<section id="scripts" class="wrap">
-  <div class="sec-head">
-    <h2>Available Scripts</h2>
-    <p>Original series, ready for licensing and production.</p>
-  </div>
-  <div class="grid">
-    <a href="#script-sins" class="card" style="display:block;color:inherit">
-      <div class="cover c1"><img src="assets/cover-sins.png" alt="Coffin of the Seven Sins"><div class="tag">DARK FANTASY</div></div>
-      <div class="card-body">
-        <h3>Coffin of the Seven Sins</h3>
-        <p>Buried alive, Princess Su Lingxi claws out of her coffin with a System that exposes the sins of everyone who killed her.</p>
-        <div class="meta"><b>Season 1:</b> 10 eps · <b>Format:</b> anime short-drama</div>
-        <span class="pill">View Details →</span>
-      </div>
-    </a>
-    <a href="mailto:zhaoz454@gmail.com?subject=Subscribe%20to%20new%20series" class="card" style="display:block;color:inherit">
-      <div class="cover c2"><div class="ph">🌊</div><div class="tag">COMING SOON</div></div>
-      <div class="card-body">
-        <h3>New Series in Development</h3>
-        <p>A new original IP is being written. Subscribe to be the first to license it.</p>
-        <div class="meta"><b>Status:</b> in development</div>
-        <span class="pill">Get Notified →</span>
-      </div>
-    </a>
-    <a href="mailto:zhaoz454@gmail.com?subject=Custom%20script%20request" class="card" style="display:block;color:inherit">
-      <div class="cover c3"><div class="ph">⚡</div><div class="tag">CUSTOM</div></div>
-      <div class="card-body">
-        <h3>Custom Script Requests</h3>
-        <p>Need a specific genre, length, or premise? We write custom scripts to your brief.</p>
-        <div class="meta"><b>Status:</b> accepting briefs</div>
-        <span class="pill">Request a Brief →</span>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section id="script-sins" class="wrap">
-  <div class="sec-head">
-    <h2>Coffin of the Seven Sins — Full Details</h2>
-    <p>Murdered. Buried. Reborn with a death list.</p>
-  </div>
-  <div class="card" style="padding:30px;background:var(--bg2)">
-    <h3 style="font-size:1.4rem;margin-bottom:12px;color:var(--accent)">What it's about</h3>
-    <p style="color:var(--text);margin-bottom:14px;line-height:1.7">The most beloved princess of the Da Yin Dynasty dies under mysterious circumstances — and wakes inside her own coffin on the day of her funeral. Reborn with the "Coffin of the Seven Sins," a System that exposes the sin in every soul, Su Lingxi discovers she was never sick. She was cursed. Murdered. And the men who killed her are standing over her grave.</p>
-    <p style="color:var(--text);margin-bottom:26px;line-height:1.7">Armed with a list of seven names — each bound to one of the Seven Deadly Sins — she rises to reclaim her life, and to collect, one by one, the offerings she is owed.</p>
-
-    <h4 style="font-size:1.05rem;margin-bottom:10px;color:var(--accent)">Key Selling Points</h4>
-    <ul style="margin-bottom:24px;padding-left:20px;line-height:1.8;color:var(--text)">
-      <li>Rebirth revenge with a quantified death list (LitRPG-style hook)</li>
-      <li>Dark, opulent "beautiful corpse, vicious queen" aesthetic</li>
-      <li>Western Seven Sins × Eastern palace intrigue crossover</li>
-      <li>Strong female lead, high-stakes political thriller</li>
-    </ul>
-
-    <h4 style="font-size:1.05rem;margin-bottom:10px;color:var(--accent)">Format &amp; Licensing</h4>
-    <ul style="margin-bottom:26px;padding-left:20px;line-height:1.8;color:var(--text)">
-      <li><b>Medium:</b> anime short-drama / motion-comic (1–3 min episodes)</li>
-      <li><b>Season 1:</b> 10 episodes (outline + bible + Episode 1 sample available)</li>
-      <li><b>License:</b> full-season, per-episode, or custom adaptation</li>
-      <li><b>Deliverables:</b> Story Bible + Episode Guide + Sample Script</li>
-    </ul>
-
-    <h4 style="font-size:1.05rem;margin-bottom:10px;color:var(--accent)">Watch the Trailer</h4>
-    <div style="background:rgba(139,92,246,.08);border:1px dashed rgba(139,92,246,.3);border-radius:12px;padding:34px 20px;text-align:center;margin-bottom:26px">
-      <p style="color:var(--muted);margin-bottom:14px">🎬 Demo trailer — coming soon on our YouTube channel</p>
-      <a class="btn ghost" href="https://www.youtube.com/@NovaMotion" target="_blank" rel="noopener">Visit YouTube Channel →</a>
-    </div>
-
-    <div style="text-align:center;margin-top:24px;padding:24px;background:linear-gradient(180deg,transparent,rgba(139,92,246,.12));border-radius:16px;border:1px solid var(--line)">
-      <h3 style="font-size:1.5rem;margin-bottom:10px">License a Script</h3>
-      <p style="color:var(--muted);margin-bottom:18px;max-width:540px;margin-left:auto;margin-right:auto">Want to adapt, translate, or produce this story? Send us a short brief and we'll send the full package + licensing terms.</p>
-      <a class="btn" href="mailto:zhaoz454@gmail.com?subject=License%20-%20Coffin%20of%20the%20Seven%20Sins">Request the Full Package →</a>
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">Original Scripts · Ready to License</span>
+    <h1>Buried Alive. Reborn With a<br><span class="grad">Death-List of Seven Sinners.</span></h1>
+    <p>Murdered and sealed inside her own coffin, Princess Su Lingxi wakes with the "Coffin of the Seven Sins" — a System that exposes the sin in every soul. Seven sins. Seven killers. One by one, they become her offerings.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#watch">Watch the Teaser</a>
+      <a class="btn ghost" href="#license">Get a Quote</a>
     </div>
   </div>
 </section>
 
-<section id="about" class="wrap">
+<section id="watch" class="wrap">
+  <div class="sec-head">
+    <h2>Watch — Live Teasers</h2>
+    <p>See the story in motion. Two episodes already live on YouTube.</p>
+  </div>
+  <div class="videos">
+    <div class="vframe">
+      <iframe src="https://www.youtube.com/embed/45T7qs9oyBQ" title="Episode 1 teaser" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="vframe">
+      <iframe src="https://www.youtube.com/embed/784CuhQE_fI" title="Episode 2 teaser" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <p style="text-align:center;color:var(--muted);margin-top:20px">More episodes releasing — <a style="color:var(--accent)" href="https://www.youtube.com/@NovaMotion" target="_blank" rel="noopener">subscribe on YouTube</a></p>
+</section>
+
+<section id="cast" class="wrap">
+  <div class="sec-head">
+    <h2>The Cast</h2>
+    <p>Seven sins, seven killers — and one princess who sees them all.</p>
+  </div>
+  <div class="chars">
+    <div class="card">
+      <div class="cover"><span class="sin">PROTAGONIST</span><img src="assets/char-su.png" alt="Princess Su Lingxi"></div>
+      <div class="card-body">
+        <h3>Su Lingxi</h3>
+        <div class="role">Taikang Princess · The Avenger</div>
+        <p>Beloved and buried. Reborn with the Sin Eye, she rises from cold and sheltered to ruthless and calculating — methodically working through the list of those who killed her.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cover"><span class="sin">ENVY</span><img src="assets/char-crown.png" alt="Crown Prince Su Chenghao"></div>
+      <div class="card-body">
+        <h3>Su Chenghao</h3>
+        <div class="role">Crown Prince · The Envious</div>
+        <p>Pale, cowardly, and craving everything she had. His Sin Value reads 87 — severe. He wears concern like a mask, and underneath it, he wanted her dead.</p>
+        <span class="sinval">Sin Value: 87</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cover"><span class="sin">PRIDE</span><img src="assets/char-su-b.png" alt="The shadows gather"></div>
+      <div class="card-body">
+        <h3>The Imperial Preceptor</h3>
+        <div class="role">Xuanji · The Hidden Hand</div>
+        <p>Expressionless, beautiful, master of the state religion. His Sin Value reads ??? — beyond detection. The one who likely sealed the coffin. The real endgame.</p>
+        <span class="sinval">Sin Value: ???</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="wrap">
+  <div class="sec-head">
+    <h2>Story So Far</h2>
+    <p>A revenge built like a game: clear targets, visible sin values, escalating power.</p>
+  </div>
+  <div class="hooks">
+    <div class="hook">
+      <div class="ep">Episode 1</div>
+      <h4>She Woke Up With a System</h4>
+      <p>Alive again in her own coffin on the day of a funeral that was secretly a murder, Su Lingxi's System unlocks: "You were not sick. You were cursed."</p>
+    </div>
+    <div class="hook">
+      <div class="ep">Episode 2</div>
+      <h4>They Called Her a Ghost</h4>
+      <p>Branded a walking ghost by the entire court, she reads the envy hidden beneath the prince's false concern. That night, a shadow slips into her chamber.</p>
+    </div>
+    <div class="hook">
+      <div class="ep">The Season</div>
+      <h4>Seven Killers. Seven Sins.</h4>
+      <p>Pride, Envy, Wrath, Sloth, Greed, Gluttony, Lust — each bound to a named killer. Every episode is one step up the list, toward the invisible mastermind.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
   <div class="sec-head">
     <h2>Why License From Us</h2>
     <p>Built for one thing: stories that hook in seconds and binge for seasons.</p>
@@ -182,17 +234,17 @@
     <div class="item">
       <div class="ic">📖</div>
       <h3>Complete Packages</h3>
-      <p>Every script ships with a series bible, full episode guide, and a polished sample script — not just a synopsis.</p>
+      <p>Every script ships with a series bible, full episode guide, and polished sample script — not just a synopsis.</p>
     </div>
     <div class="item">
       <div class="ic">🌏</div>
       <h3>Global-Ready</h3>
-      <p>Written in English with western "Seven Sins" + eastern palace-intrigue crossover hooks that travel across markets.</p>
+      <p>Western "Seven Sins" × eastern palace-intrigue crossover hooks that travel across markets. Written in English.</p>
     </div>
     <div class="item">
-      <div class="ic">⚙️</div>
-      <h3>Flexible Terms</h3>
-      <p>Full-season license, per-episode purchase, or custom adaptation — you choose how you want to produce it.</p>
+      <div class="ic">🎴</div>
+      <h3>Card-Ready Art Hook</h3>
+      <p>Gothic, opulent "beautiful corpse, vicious queen" aesthetic — designed to be visually striking in anime-card form.</p>
     </div>
   </div>
 </section>
@@ -200,8 +252,8 @@
 <section id="license" class="wrap">
   <div class="cta">
     <h2>License a Script</h2>
-    <p>Want to adapt, translate, or produce our stories? Tell us which script you're interested in and we'll send the full package and licensing terms.</p>
-    <a class="btn" href="mailto:zhaoz454@outlook.com">Request a Script Package</a>
+    <p>Want to adapt, translate, or produce this story? Tell us which script you're interested in and we'll send the full package and licensing terms.</p>
+    <a class="btn" href="mailto:zhaoz454@gmail.com?subject=License%20-%20Coffin%20of%20the%20Seven%20Sins">Request the Full Package</a>
   </div>
 </section>
 
